@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prototype "RPG game" — Dmitrii Mochalov</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/lightbox.css">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container">
+    <section class="section">
+      <div class="muted"><a href="../index.html">All Projects</a> | <a href="project-1.html">Next →</a></div>
+      <h1 class="page-title">Prototype "RPG game"</h1>
+      <div class="block">
+        <p>This prototype is also done by completing Stephen Ulibarri <a href="https://www.udemy.com/course/unreal-engine-5-the-ultimate-game-developer-course/">course</a> but it focuses more on C++ part.</p>
+        <p>It was really long and hard to follow guide with a lot of additional information searching and errors solving.</p>
+        <p>Anyway it helps me to understand some of the concepts:</p>
+        <ul>
+          <li>Combat with swords and weapon equipping</li>
+          <li>Health bars and player stats</li>
+          <li>Motion Warping</li>
+          <li>AI: behavior trees, nav meshes</li>
+          <li>MetaSounds</li>
+          <li>Chaos destuction and data structures for loot tables</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Screenshots</h2>
+      <div class="grid gallery-grid">
+          <img src="../assets/images/project4-1.png" alt="Main menu" loading="lazy">
+          <img src="../assets/images/project4-2.png" alt="Door" loading="lazy">
+          <img src="../assets/images/project4-3.png" alt="Portal room" loading="lazy">
+          <img src="../assets/images/project4-4.png" alt="Boss room" loading="lazy">
+      </div>
+    </section>
+
+    <section class="section media">
+      <h2>Gameplay</h2>
+      <div class="block">
+        <video src="../assets/videos/rpg_gameplay.mp4" controls poster="../assets/images/project4-thumb.png" style="width:100%; border-radius:12px;"></video>
+      </div>
+    </section>
+
+    <footer class="site-footer muted space-lg">
+      © <span id="year"></span> <span id="footer-name">Имя Фамилия</span> — Prototype "RPG game"
+    </footer>
+  </main>
+
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/header.js"></script>
+  <script src="../assets/js/lightbox.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear(); try { document.getElementById('footer-name').textContent = SITE.name; } catch(e){}</script>
+</body>
+</html>

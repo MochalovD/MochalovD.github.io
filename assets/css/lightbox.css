@@ -1,0 +1,33 @@
+/* Lightbox — только для страниц проектов */
+body.no-scroll { overflow: hidden; }
+
+.lb {
+  position: fixed; inset: 0; z-index: 1000;
+  display: none; justify-content: center; align-items: center;
+  padding: 24px; background: rgba(0,0,0,.85);
+}
+.lb[aria-hidden="false"] { display: flex; }
+
+.lb__img {
+  max-width: 90vw; max-height: 90vh;
+  border-radius: 12px; border: 1px solid rgba(255,255,255,.15);
+  box-shadow: 0 20px 60px rgba(0,0,0,.6);
+  cursor: zoom-out;
+}
+
+.lb__btn {
+  position: absolute; width: 44px; height: 44px;
+  display: grid; place-items: center; cursor: pointer;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 10px; color: #fff; font-size: 20px;
+  backdrop-filter: blur(6px);
+}
+.lb__btn:hover { background: rgba(255,255,255,.12); }
+
+.lb__close { top: 16px; right: 16px; }
+.lb__prev  { left: 16px; top: 50%; transform: translateY(-50%); }
+.lb__next  { right: 16px; top: 50%; transform: translateY(-50%); }
+
+/* курсор-указатель на картинках в проекте */
+.gallery-grid img, .details img { cursor: zoom-in; }

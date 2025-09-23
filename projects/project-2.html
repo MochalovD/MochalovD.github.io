@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project "Demon Killer 3000" — Dmitrii Mochalov</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/lightbox.css">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container">
+    <section class="section">
+      <div class="muted"><a href="../index.html">All Projects</a> | <a href="project-3.html">Next →</a></div>
+      <h1 class="page-title">Project "Demon Killer 3000"</h1>
+      <div class="block">
+        <p>Initially, it was a very short course about working with 2.5D textures in Blueprints. I decided to finish it and make a full-fledged level with two maps: an introductory section and a separate location with a boss.</p>
+        <p>It was amazing try to recreate the style and atmosphere of such game as Doom 1993 or Blood.</p>
+        <p>While making this project I got priceless experience working with:</p>
+        <ul>
+          <li>PaperSprites and sprites overall. To be honest - I don't like them haha :)</li>
+          <li>Players HUD and information updates(such as ammo or health). UI widgets.</li>
+          <li>Different weapons, their projectiles, damage and ammo systems.</li>
+          <li>AI: behavior trees, nav meshes, sensing components.</li>
+          <li>Items to interact: doors, portals, pickups, explosive barrels.</li>
+          <li>Level design: now I definitely appreciate more the WORK that level and narrative designers do - it's so hard to create a level so it's interesting for player to explore or engage with something.</li>
+          <li>A lot of time was spent tweaking sounds and textures.</li>
+        </ul>
+        <p><strong><a href="../assets/files/demonkiller_gdd.pdf" target="_blank">Game Design document</a></strong></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Screenshots</h2>
+      <div class="grid gallery-grid">
+          <img src="../assets/images/project2-1.png" alt="Main menu" loading="lazy">
+          <img src="../assets/images/project2-2.png" alt="Door" loading="lazy">
+          <img src="../assets/images/project2-3.png" alt="Portal room" loading="lazy">
+          <img src="../assets/images/project2-4.png" alt="Boss room" loading="lazy">
+      </div>
+    </section>
+
+    <section class="section media">
+      <h2>Gameplay</h2>
+      <div class="block">
+        <video src="../assets/videos/demonkiller_gameplay.mp4" controls poster="../assets/images/project2-4.png" style="width:100%; border-radius:12px;"></video>
+      </div>
+    </section>
+
+    <section class="section details">
+      <h2>Design details</h2>
+      <div class="block">
+        <p>One of the coolest features that I did here was - activating portal when player pick up the Shotgun</p>
+        <img src="../assets/videos/demonkiller_teleport.gif" alt="Portal activation" loading="lazy">
+      </div>
+    </section>
+
+    <footer class="site-footer muted space-lg">
+      © <span id="year"></span> <span id="footer-name">Имя Фамилия</span> — Project "Demon Killer 3000"
+    </footer>
+  </main>
+
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/header.js"></script>
+  <script src="../assets/js/lightbox.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear(); try { document.getElementById('footer-name').textContent = SITE.name; } catch(e){}</script>
+</body>
+</html>

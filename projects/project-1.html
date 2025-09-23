@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prototype "Agility man" — Dmitrii Mochalov</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/lightbox.css">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container">
+    <section class="section">
+      <div class="muted"><a href="../index.html">All Projects</a> | <a href="project-2.html">Next →</a></div>
+      <h1 class="page-title">Prototype "Agility man"</h1>
+      <div class="block">
+        <p>The core idea of the prototype is to build mechanics similar to “Fall Guys” where the player must navigate obstacle courses and reach the finish line.</p>
+        <p>In this case, I created reusable C++ components and attached them to Blueprints with Actors to deliver the required functionality: health, projectiles, object rotation, super jump, jump pads and patrolling. As a result, the system is highly flexible and quick to configure.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Screenshots</h2>
+      <div class="grid gallery-grid">
+          <img src="../assets/images/project1-1.png" alt="Tutorial level" loading="lazy">
+          <img src="../assets/images/project1-2.png" alt="Level 2" loading="lazy">
+          <img src="../assets/images/project1-3.png" alt="Level 3" loading="lazy">
+          <img src="../assets/images/project1-4.png" alt="Level 4" loading="lazy">
+          <img src="../assets/images/project1-5.png" alt="Level 5" loading="lazy">
+          <img src="../assets/images/project1-6.png" alt="Options for player" loading="lazy">
+          <img src="../assets/images/project1-7.png" alt="Level 6 platforms" loading="lazy">
+          <img src="../assets/images/project1-8.png" alt="Game completed" loading="lazy">
+      </div>
+    </section>
+
+    <section class="section media">
+      <h2>Gameplay</h2>
+      <div class="block">
+        <video src="../assets/videos/agiman_gameplay.mp4" controls poster="../assets/images/project1-1.png" style="width:100%; border-radius:12px;"></video>
+      </div>
+    </section>
+
+    <section class="section details">
+      <h2>Design details</h2>
+      <div class="block">
+        <p>Health system has take damage function, that allow player to be killed by projectiles or falling.</p>
+        <img src="../assets/images/agiman-healthcomponent.png" alt="Health system" loading="lazy">
+        <hr>
+        <p>Shooting system spawn projectile and can be adjusted as needed.</p>
+        <img src="../assets/images/agiman-shooting.png" alt="Shooting system" loading="lazy">
+        <hr>
+        <p>Rotation system allows us to easily rotate any object in the scene.</p>
+        <img src="../assets/images/agiman-rotation.png" alt="Rotation system" loading="lazy">
+        <hr>
+        <p>Patrol system allows to make looped routes for objects, for example flying meshes.</p>
+        <img src="../assets/images/agiman-patrol.png" alt="Patrol system" loading="lazy">
+      </div>
+    </section>
+
+    <footer class="site-footer muted space-lg">
+      © <span id="year"></span> <span id="footer-name">Имя Фамилия</span> — Prototype "Agility man"
+    </footer>
+  </main>
+
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/header.js"></script>
+  <script src="../assets/js/lightbox.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear(); try { document.getElementById('footer-name').textContent = SITE.name; } catch(e){}</script>
+</body>
+</html>

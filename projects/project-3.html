@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prototype "Drone" — Dmitrii Mochalov</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/lightbox.css">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container">
+    <section class="section">
+      <div class="muted"><a href="../index.html">All Projects</a> | <a href="project-4.html">Next →</a></div>
+      <h1 class="page-title">Prototype "Drone"</h1>
+      <div class="block">
+        <p>This prototype is done by completing Stephen Ulibarri <a href="https://www.udemy.com/course/ue5-ultimate-bp-course/">amazing course</a> that covers all the basics of Blueprint system.</p>
+        <p>I also did the Jetpack and Chaos Vehicle parts, but unfortunatelly they were deleted.</p>
+        <p>It tought me about:</p>
+        <ul>
+          <li>Unreal Engine materials</li>
+          <li>Effects with Niagara Systems and MetaSounds</li>
+          <li>Projectiles, damage and health systems</li>
+          <li>UI elements</li>
+          <li>Enemies spawn</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Screenshots</h2>
+      <div class="grid gallery-grid">
+          <img src="../assets/images/project3-1.png" alt="Gameplay" loading="lazy">
+          <img src="../assets/images/project3-2.png" alt="Enemy explosion" loading="lazy">
+          <img src="../assets/images/project3-3.png" alt="Boss fight" loading="lazy">
+          <img src="../assets/images/project3-4.png" alt="Boss room" loading="lazy">
+      </div>
+    </section>
+
+    <section class="section media">
+      <h2>Gameplay</h2>
+      <div class="block">
+        <video src="../assets/videos/dron_gameplay.mp4" controls poster="../assets/images/project3-1.png" style="width:100%; border-radius:12px;"></video>
+      </div>
+    </section>
+
+    <footer class="site-footer muted space-lg">
+      © <span id="year"></span> <span id="footer-name">Имя Фамилия</span> — Prototype "Drone"
+    </footer>
+  </main>
+
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/header.js"></script>
+  <script src="../assets/js/lightbox.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear(); try { document.getElementById('footer-name').textContent = SITE.name; } catch(e){}</script>
+</body>
+</html>

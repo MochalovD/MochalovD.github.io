@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dmitrii Mochalov - Game Designer Portfolio</title>
+  <meta name="description" content="Portfolio of Dmitrii Mochalov - UE5 Game Designer: projects, courses, about me.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <section class="section intro">
+      <p>I love games, they are my passion.</p>
+      <p>I have over 25 years of gaming experience across various genres, primarily MMORPGs, RPGs, and FPS games.</p>
+      <p>In my free time, I'm learning Unreal Engine 5, Game Design, how to be even more productive and German language.</p>
+    </section>
+
+    <section class="section">
+      <h2>Projects</h2>
+      <div class="grid projects-grid">
+        <article class="project-card">
+          <img src="assets/images/project1-thumb.png" alt="Prototype Agility man" loading="lazy">
+          <div class="content">
+            <a class="title" href="projects/project-1.html">Prototype "Agility man"</a>
+            <p class="desc">Pet project: 3D-platformer with "Fall guys" vibe went you throught 6 levels.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/images/project2-thumb.png" alt="Project Demon Killer 3000" loading="lazy">
+          <div class="content">
+            <a class="title" href="projects/project-2.html">Project "Demon Killer 3000"</a>
+            <p class="desc">Extended and completed by me: version of Udemy course with "DooM 1998"-like game. With GDD included.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/images/project3-thumb.png" alt="Prototype Drone" loading="lazy">
+          <div class="content">
+            <a class="title" href="projects/project-3.html">Prototype "Drone"</a>
+            <p class="desc">Fully completed level of 3D action game with shooting drone. Done by completing Udemy course with my simple UI fixes.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/images/project4-thumb.png" alt="Prototype RPG game" loading="lazy">
+          <div class="content">
+            <a class="title" href="projects/project-4.html">Prototype "RPG game"</a>
+            <p class="desc">3D action RPG mechanics done by completing Udemy course with C++ and Blueprints.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="site-footer muted">
+      © <span id="year"></span> <span id="footer-name">Имя Фамилия</span>. Made with ChatGPT and coffee.
+    </footer>
+  </main>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/header.js"></script>
+  <script>
+    // Footer dynamic values
+    document.getElementById('year').textContent = new Date().getFullYear();
+    try { document.getElementById('footer-name').textContent = SITE.name; } catch(e){}
+  </script>
+</body>
+</html>
