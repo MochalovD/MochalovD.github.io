@@ -199,6 +199,12 @@ a:hover{ text-decoration: underline; }
   font-size: 14px;
 }
 
+.my_photo {
+  max-width: 300px;
+  float: left;
+  margin: 0 15px 15px 0;
+}
+
 /* Footer (optional) */
 .site-footer{
   margin: 40px 0;
@@ -226,6 +232,7 @@ a:hover{ text-decoration: underline; }
 /* ≥1200px: 4 gallery columns as requested */
 @media (min-width: 1200px){
   .gallery-grid{ grid-template-columns: repeat(4, 1fr); }
+  .grind-3-column{ grid-template-columns: repeat(3, 1fr); }
 }
 
 /* Mobile nav behavior */

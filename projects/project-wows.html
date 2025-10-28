@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>World of Warships — Dmitrii Mochalov</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/lightbox.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main class="container">
+    <section class="section">
+        <div class="muted"><a href="../index.html">All Projects</a> | <a href="project-1.html">Next →</a></div>
+        <h1 class="page-title">World of Warships</h1>
+        <div class="block">
+            <p style="text-decoration: underline;"><strong>Position: Content Delivery Manager</strong></p>
+            <p>As part of the Content Delivery team in the LiveOps department, I was in one of the central positions that controlled new content distribution.</p>
+            <p>All new content that Monetization team or regional producers requested has gone through us.</p>
+            <p>It includes standard content like ships, skins or commanders and also new features or collaborations (like Azur Lane or Blue Archive).</p>
+            <p>At <a href="https://mochalovd.github.io/experience.html" target="_blank">this page</a> you can read more about technical improvements that I made already.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Screenshots</h2>
+        <div class="grid gallery-grid grind-3-column">
+            <img src="../assets/images/wows_1.jpg" alt="World of Warships Azur Lane collaboration" loading="lazy">
+            <img src="../assets/images/wows_2.jpg" alt="World of Warships Blue Archive collaboration" loading="lazy">
+            <img src="../assets/images/wows_3.jpg" alt="World of Warships Warhammer 40K collaboration" loading="lazy">
+        </div>
+    </section>
+
+    <section class="section media">
+        <h2>Gameplay</h2>
+        <div class="block" style="text-align: center;">
+            <iframe width="900" height="500" src="https://www.youtube-nocookie.com/embed/uze0aJIveX0?si=Vfm9EZNOCn8sLLUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer class="site-footer muted space-lg">
+        © <span id="year"></span> <span id="footer-name">Имя Фамилия</span> — World of Warships
+    </footer>
+</main>
+
+<script src="../assets/js/config.js"></script>
+<script src="../assets/js/header.js"></script>
+<script src="../assets/js/lightbox.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear(); try { document.getElementById('footer-name').textContent = SITE.name; } catch(e){}</script>
+</body>
+</html>
