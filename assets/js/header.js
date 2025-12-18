@@ -5,6 +5,7 @@
   const contactItems = [
     SITE.email ? `<a href="mailto:${SITE.email}" class="contact-link" aria-label="Email">${SITE.email}</a>` : "",
     SITE.linkedin ? `<a href="${SITE.linkedin}" target="_blank" rel="noopener" class="contact-link" aria-label="LinkedIn">LinkedIn</a>` : "",
+    SITE.youtube ? `<a href="${SITE.youtube}" target="_blank" rel="noopener" class="contact-link" aria-label="Youtube">Youtube</a>` : "",
     SITE.telegram ? `<a href="${SITE.telegram}" target="_blank" rel="noopener" class="contact-link" aria-label="Telegram">Telegram</a>` : "",
   ].filter(Boolean).join('<span class="dot">•</span>');
 
