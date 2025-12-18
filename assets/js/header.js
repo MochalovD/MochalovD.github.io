@@ -13,7 +13,7 @@
     <div class="container header-inner">
       <div class="brand">
         <div class="brand-top">
-          <a href="index.html" class="brand-name" title="To home">${SITE.name}</a>
+          <a href="/index.html" class="brand-name" title="To home">${SITE.name}</a>
           <span class="brand-role">${SITE.role}</span>
         </div>
         <div class="brand-contacts">${contactItems}</div>
