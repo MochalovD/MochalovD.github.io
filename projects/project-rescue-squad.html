@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blockout "Rescue Squad" — Dmitrii Mochalov</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/lightbox.css">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container">
+    <section class="section">
+      <div class="muted"><a href="../index.html">All Projects</a> | <a href="project-1.html">Next →</a></div>
+      <h1 class="page-title">Blockout "Rescue Squad"</h1>
+      <div class="block">
+        <p>This project was inspired by stealth adventure games like Uncharted, Metal Gear Solid and The Last Of Us.</p>
+        <p>I want to use maximum of AGLS framework and practice my level design skills.</p>
+        <hr>
+        <p>Engine: UE 5.6</p>
+        <p>Status: In progress</p>
+        <p>LDD: Ready, in translation phase.</p>
+        <p>Moodboard: <a href="https://www.pinterest.com/dmtimemanager/resque-squad/">https://www.pinterest.com/dmtimemanager/resque-squad/</a></p>
+      </div>
+    </section>
+
+    <section class="section media">
+      <h2>Gameplay</h2>
+      <div class="block">
+            <video src="../assets/videos/BlockoutDemo.mp4" controls style="width:100%; border-radius:12px;"></video>
+        </div>
+    </section>
+
+    <section class="section details">
+      <h2>Map Layout Overview</h2>
+      <div class="block ">
+        <p>Top down overview of the player path and progress</p>
+        <div class="grid gallery-grid grind-3-column">
+          <img src="../assets/images/rescue/top_view_1.png" alt="Top View" loading="lazy">
+          <img src="../assets/images/rescue/top_view_2_lab_added.png" alt="Top View" loading="lazy">
+          <img src="../assets/images/rescue/player_flow.png" alt="Player path" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section details">
+      <h2>Zones</h2>
+      <div class="block">
+        <p>Starting location - prison. The player gets used to controls and trying to figure out what's goin on.</p>
+        <div class="grid gallery-grid grind-3-column">
+          <img src="../assets/images/rescue/Prison/day_1.png" alt="Prison" loading="lazy">
+          <img src="../assets/images/rescue/Prison/day_2.png" alt="Prison" loading="lazy">
+        </div>
+        <hr>
+        <p>After exiting the prison - player engage with 2 enemies and finds that elevator did not work anymore. He needs to find another path to climb the rock.</p>
+        <p>At the top here we will enter Warehouse, which has a few enemies and 3 different path to go through it.</p>
+        <div class="grid gallery-grid grind-3-column">
+          <img src="../assets/images/rescue/Lift/day_1.png" alt="Broken elevator" loading="lazy">
+          <img src="../assets/images/rescue/Lift/day_2.png" alt="Broken elevator" loading="lazy">
+          <img src="../assets/images/rescue/Warehouse/day_1.png" alt="Warehouse" loading="lazy">
+          <img src="../assets/images/rescue/Warehouse/day_2.png" alt="Warehouse" loading="lazy">
+        </div>
+        <hr>
+        <p>When player exit warehouse he clearly sees his current main destination - Kitchen. But here again he has 3 completely different ways to reach it.</p>
+        <div class="grid gallery-grid grind-3-column">
+          <img src="../assets/images/rescue/Pipe/day_1.png" alt="Pipe" loading="lazy">
+          <img src="../assets/images/rescue/Pipe/day_2.png" alt="KitPipechen" loading="lazy">
+          <img src="../assets/images/rescue/Kitchen/day_1.png" alt="Kitchen" loading="lazy">
+          <img src="../assets/images/rescue/Kitchen/day_2.png" alt="Kitchen" loading="lazy">
+        </div>
+        <hr>
+        <p>After kitchen, he needs to collect 2 access cards to enter the Lab. So he goes to Administration building and Boss house in any order.</p>
+        <div class="grid gallery-grid grind-3-column">
+          <img src="../assets/images/rescue/Base/day_1.png" alt="Base" loading="lazy">
+          <img src="../assets/images/rescue/Base/day_2.png" alt="Base" loading="lazy">
+          <img src="../assets/images/rescue/Lab/entrance/day_1.png" alt="Lab entrance" loading="lazy">
+          <img src="../assets/images/rescue/Lab/entrance/day_1.png" alt="Lab entrance" loading="lazy">
+        </div>
+        <hr>
+        <p>In Lab he has 1 blocked path(final exit from the underground) and 2 path to the main lab. Right path will give high ground advantage with good overview.</p>
+        <p>He can escape lab through a small opening in the back wall. Using grappling hook he can jump over the abyss to the exit path.</p>
+        <div class="grid gallery-grid grind-3-column">
+          <img src="../assets/images/rescue/Lab/main/day_2.png" alt="Lab" loading="lazy">
+          <img src="../assets/images/rescue/Lab/main/day_2_1.png" alt="Lab" loading="lazy">
+          <img src="../assets/images/rescue/Lab/main/day_2_2.png" alt="Lab" loading="lazy">
+          <img src="../assets/images/rescue/Lab/exit/day_2.png" alt="Exit path from the lab" loading="lazy">
+        </div>
+        <hr>
+        <p>Here outside of the main base he need to run to the evacuate point. But it's not that simple...</p>
+        <div class="grid gallery-grid grind-3-column">
+          <img src="../assets/images/rescue/Escape/day_1.png" alt="Evacuate point" loading="lazy">
+          <img src="../assets/images/rescue/Escape/day_2.png" alt="Evacuate point" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/header.js"></script>
+  <script src="../assets/js/lightbox.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear(); try { document.getElementById('footer-name').textContent = SITE.name; } catch(e){}</script>
+</body>
+</html>
